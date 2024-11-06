@@ -1,0 +1,47 @@
+Caderno de Anotações das Aulas DevDojo
+
+
+
+
+
+###############################   Aula 161 - Coleções pt 01 - equals pt 01   ###############################
+- o Metodo Equals vem da classe Object, entao todas as outras classe sobrescreve Equals, Explicitamente ou Implicitamente,
+  ele compara se o objeto em memoria (this) faz referencia ao mesmo objeto.
+
+  Como Assim:
+  Carro c1 = new Carro("FIAT UNO", 2013);  REF: carro01
+  Carro c2 = new Carro("FIAT UNO", 2013);  REF: carro02
+
+  c1 e c2, sao objetos distintos pois cada variavel faz referencia a objetos diferentes. por mais que os varoles atribuidos
+  seja equivalentes, o metodo Equals nao compara valores e sim Referencias.
+
+  Caso: c1.equals(c2); é igual a false
+
+  Agora:
+  Carro c1 = new Carro("FIAT UNO", 2013);  REF: carro01
+  Carro c2 = c1;  REF: carro01
+
+  c1.equals(c2); é igual a true, pois c1 e c2 apontam para o mesmo objeto
+
+###############################   Aula 162 - Coleções pt 01 - equals pt 02   ###############################
+
+Agora vamos instruir ao metodo Equals levar em consideração os valores atribuidos na equidade entre dois objetos,
+desconsiderando as referencias.
+
+Como ?
+
+Sobrescrevendo o metodo Equals, levando em consideração sua regra de negocio. para dois objetos serem iguais só depender
+do nome, nome e marca..
+
+   @Override
+    public boolean equals(Object obj) {
+        if(obj == null) return false;
+        if(this == obj) return true;
+        if(this.getClass() != obj.getClass()) return false;
+        Carro carro = (Carro) obj;
+        return nome != null && nome.equals(carro.nome);  <- apenas o nome como equidade
+        return nome != null && nome.equals(carro.nome) && ano != null && ano.equals(carro.ano);  <- nome e ano como equidade e por ai vai
+    }
+
+
+###############################   163 - Coleções pt 03 - hashCode pt 01   ###############################
