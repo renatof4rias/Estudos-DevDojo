@@ -9,15 +9,6 @@ public class Carro {
         this.ano = ano;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if(obj == null) return false;
-        if(this == obj) return true;
-        if(this.getClass() != obj.getClass()) return false;
-        Carro carro = (Carro) obj;
-        return nome != null && nome.equals(carro.nome) && ano != null && ano.equals(carro.ano);
-    }
-
     public String getNome() {
         return nome;
     }

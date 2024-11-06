@@ -45,3 +45,11 @@ do nome, nome e marca..
 
 
 ###############################   163 - Coleções pt 03 - hashCode pt 01   ###############################
+
+- hashcode é uma forma de indexar objetos com um valor hash, valor hash é uma maneira de gerar um valor possivelmente unico,
+  e determinar onde o java pode armazenar esse objeto no index (valor gerado), de uma forma que o nome gere um hash com o valor que cada letra
+  possui. A=1, B=2, C=3  Renato = R = 18, e = 5, n = 14, a = 1, t = 20, o = 15, Renato = 73 entao o objeto que contem renato como nome, pode ser
+  indexado no valor 73;
+
+
+
