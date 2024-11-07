@@ -60,20 +60,20 @@ public class Carro implements Comparable<Carro>{
         this.id = id;
     }
 
-    @Override
-    public int compareTo(Carro o) {
-        if(this.id < o.getId()){
-            return -1;
-        } else if (this.id.equals(o.getId())) {
-            return 0;
-        } else {
-            return 1;
-        }
-    }
-
 //    @Override
 //    public int compareTo(Carro o) {
-//
-//        return this.nome.compareTo(o.getNome());
+//        if(this.id < o.getId()){
+//            return -1;
+//        } else if (this.id.equals(o.getId())) {
+//            return 0;
+//        } else {
+//            return 1;
+//        }
 //    }
+
+    @Override
+    public int compareTo(Carro o) {
+
+        return this.nome.compareTo(o.getNome());
+    }
 }
