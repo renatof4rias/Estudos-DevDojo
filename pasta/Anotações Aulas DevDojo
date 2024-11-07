@@ -80,6 +80,8 @@ Lista é uma lista kkkk, uma lista contendo valores a sendo armazenado de forma 
        .removeFirst()
        .replaceAll()
 ###############################   169 - Coleções pt 10 - Sorting lists pt 01 -   ###############################
+Sorting list usado para ordenar uma lista, quando se usado em listas de wrappers tudo ok, quando se usa em Objetos é necessario criar metodos de ordenação, tal como a adição de
+atributos identificadores como id, metodos esses que sao equals e hashcode que vao ter valores de ordenação dentro os index
 
 
 
