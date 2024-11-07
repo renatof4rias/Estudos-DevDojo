@@ -71,16 +71,15 @@ Lista é uma lista kkkk, uma lista contendo valores a sendo armazenado de forma 
     Nao precisa definir o tamanho, isso já é feito de forma dinamica
     e ArrayList é um tipo de lista que é o mais simples dentro os outros.
 
+    Nao é possivel usar tipos primitivos como tipo de lista, utilizar apenas os wrappers
 
+       Metodos Uteis
+       .add()
+       .remove()
+       .removeLast()
+       .removeFirst()
+       .replaceAll()
 
-
-
-
-
-
-
-
-###############################   167 - Coleções pt 07 - List pt 02   ###############################
 ###############################   168 - Coleções pt 08 - List pt 03   ###############################
 ###############################   169 - Coleções pt 10 - Sorting lists pt 01 -   ###############################
 ###############################   163 - Coleções pt 03 - hashCode pt 01   ###############################

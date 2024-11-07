@@ -24,6 +24,9 @@ public class ListTest01 {
             System.out.println(tipoGeneric);
         }
 
+        tipoObject.remove(0);
+        tipoGenerics.remove(0);
+
 
     }
 }
