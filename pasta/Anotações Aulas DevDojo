@@ -54,6 +54,32 @@ do nome, nome e marca..
 
 ###############################   166 - Coleções pt 06 - List pt 01   ###############################
 
+Lista é uma lista kkkk, uma lista contendo valores a sendo armazenado de forma ordenada, List é uma interface que extende collection e provem implementação.
+
+    Temos lista com Generics e sem Generics
+
+    List nomes = new Arraylist();
+    nomes.add("asfsfasf")
+    nomes.add(123)
+    Sem Generics nao tem um tipo especifico, ele é considerado um Object podendo causar um problema pela inconsistencia dos dados
+
+    List<String> nomes = new Arraylist();
+    nomes.add("asfsfasf")
+    nomes.add(123) <- aqui já teria um erro de compilação.
+    Com Generics vc define o tipo do dado a ser manipulado evitando problemas.
+
+    Nao precisa definir o tamanho, isso já é feito de forma dinamica
+    e ArrayList é um tipo de lista que é o mais simples dentro os outros.
+
+
+
+
+
+
+
+
+
+
 ###############################   167 - Coleções pt 07 - List pt 02   ###############################
 ###############################   168 - Coleções pt 08 - List pt 03   ###############################
 ###############################   169 - Coleções pt 10 - Sorting lists pt 01 -   ###############################
